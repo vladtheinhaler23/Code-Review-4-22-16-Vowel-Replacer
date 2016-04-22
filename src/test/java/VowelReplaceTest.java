@@ -13,4 +13,9 @@ public class VowelReplaceTest {
     VowelReplace vowelReplace = new VowelReplace();
     assertEquals("-", vowelReplace.vowelReplacer("a"));
   }
+  @Test
+  public void vowelReplacer_forASingleWord_cat() {
+    VowelReplace vowelReplace = new VowelReplace();
+    assertEquals("c-t", vowelReplace.vowelReplacer("cat"));
+  }
 }
