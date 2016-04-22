@@ -23,4 +23,9 @@ public class VowelReplaceTest {
     VowelReplace vowelReplace = new VowelReplace();
     assertEquals("b-g d-g", vowelReplace.vowelReplacer("big dog"));
   }
+  @Test
+  public void vowelReplacer_forMultipleWordsWithCaps_BdashgDdashg() {
+    VowelReplace vowelReplace = new VowelReplace();
+    assertEquals("B-g D-g", vowelReplace.vowelReplacer("Big Dog"));
+  }
 }
