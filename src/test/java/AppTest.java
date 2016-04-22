@@ -22,4 +22,11 @@ public class AppTest extends FluentTest {
     goTo("http://localhost:4567/");
     assertThat(pageSource()).contains("Vowel Replacer");
   }
+  @Test
+    public void isALeapYear() {
+    goTo("http://localhost:4567");
+    fill("#userInput").with("b");
+    submit(".btn");
+    assertThat(pageSource()).contains("b");
+}
 }

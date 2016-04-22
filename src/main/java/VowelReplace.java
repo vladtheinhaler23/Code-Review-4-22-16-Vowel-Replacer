@@ -15,9 +15,20 @@ public class VowelReplace {
       model.put("template", "templates/home.vtl" );
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+
+    get("/reults", (request, response) -> {
+      HashMap model = new HashMap();
+      String userInput = request.queryParams("userInput");
+
+      String changedString = vowelReplacer(userInput);
+
+      model.put("output", changedString);
+      model.put("template", "templates/greeting_card.vtl");
+      return new ModelAndView(model, layout);
+      }, new VelocityTemplateEngine());
   }
 
-  public String vowelReplacer(String userInput) {
+  public static String vowelReplacer(String userInput) {
 
     String results = "";
 
