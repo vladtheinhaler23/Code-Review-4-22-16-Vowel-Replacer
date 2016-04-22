@@ -9,13 +9,18 @@ public class VowelReplaceTest {
     assertEquals("b", vowelReplace.vowelReplacer("b"));
   }
   @Test
-  public void vowelReplacer_forASingleVowel_a() {
+  public void vowelReplacer_forASingleVowel_dash() {
     VowelReplace vowelReplace = new VowelReplace();
     assertEquals("-", vowelReplace.vowelReplacer("a"));
   }
   @Test
-  public void vowelReplacer_forASingleWord_cat() {
+  public void vowelReplacer_forASingleWord_cdasht() {
     VowelReplace vowelReplace = new VowelReplace();
     assertEquals("c-t", vowelReplace.vowelReplacer("cat"));
+  }
+  @Test
+  public void vowelReplacer_forMultipleWords_bdashgDdashg() {
+    VowelReplace vowelReplace = new VowelReplace();
+    assertEquals("b-g d-g", vowelReplace.vowelReplacer("big dog"));
   }
 }

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="VowelReplaceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-04-22T04:44:49" hostname="Joshuas-MBP.hsd1.or.comcast.net" time="0.002">
+<testsuite name="VowelReplaceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-04-22T04:47:25" hostname="Joshuas-MBP.hsd1.or.comcast.net" time="0.003">
   <properties/>
-  <testcase name="vowelReplacer_forASingleVowel_a" classname="VowelReplaceTest" time="0.001"/>
+  <testcase name="vowelReplacer_forASingleVowel_dash" classname="VowelReplaceTest" time="0.002"/>
   <testcase name="vowelReplacer_forASingleConsonant_b" classname="VowelReplaceTest" time="0.0"/>
-  <testcase name="vowelReplacer_forASingleWord_cat" classname="VowelReplaceTest" time="0.0"/>
+  <testcase name="vowelReplacer_forMultipleWords_bdashgDdashg" classname="VowelReplaceTest" time="0.0"/>
+  <testcase name="vowelReplacer_forASingleWord_cdasht" classname="VowelReplaceTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
