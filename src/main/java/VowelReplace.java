@@ -1,5 +1,21 @@
+import java.util.HashMap;
+import java.util.Map;
+import spark.ModelAndView;
+import spark.template.velocity.VelocityTemplateEngine;
+import static spark.Spark.*;
+
+
 public class VowelReplace {
-  public static void main(String[] args) {}
+  public static void main(String[] args) {
+    staticFileLocation("/public");
+    String layout = "templates/layout.vtl";
+
+    get("/", (request, response) -> {
+      Map model = new HashMap();
+      model.put("template", "templates/home.vtl" );
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+  }
 
   public String vowelReplacer(String userInput) {
 
