@@ -5,6 +5,7 @@ public class VowelReplaceTest {
 
   @Test
   public void vowelReplacer_forASingleConsonant_b() {
-    // eventually put your testing code here
+    VowelReplace vowelReplace = new VowelReplace();
+    assertEquals("b", vowelReplace.vowelReplacer("b"));
   }
 }
