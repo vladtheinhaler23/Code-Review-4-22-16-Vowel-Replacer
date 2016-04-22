@@ -43,4 +43,11 @@ public class AppTest extends FluentTest {
     submit(".btn");
     assertThat(pageSource()).contains("t-p-");
   }
+  @Test
+    public void multipleWords() {
+    goTo("http://localhost:4567");
+    fill("#userInput").with("big dog");
+    submit(".btn");
+    assertThat(pageSource()).contains("b-g d-g");
+  }
 }
