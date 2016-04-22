@@ -8,4 +8,9 @@ public class VowelReplaceTest {
     VowelReplace vowelReplace = new VowelReplace();
     assertEquals("b", vowelReplace.vowelReplacer("b"));
   }
+  @Test
+  public void vowelReplacer_forASingleVowel_a() {
+    VowelReplace vowelReplace = new VowelReplace();
+    assertEquals("-", vowelReplace.vowelReplacer("a"));
+  }
 }
