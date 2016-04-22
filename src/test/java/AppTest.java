@@ -23,10 +23,17 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Vowel Replacer");
   }
   @Test
-    public void isALeapYear() {
+    public void singleConsonant() {
     goTo("http://localhost:4567");
     fill("#userInput").with("b");
     submit(".btn");
     assertThat(pageSource()).contains("b");
-}
+  }
+  @Test
+    public void wordWithSingleVowel() {
+    goTo("http://localhost:4567");
+    fill("#userInput").with("dog");
+    submit(".btn");
+    assertThat(pageSource()).contains("d-g");
+  }
 }

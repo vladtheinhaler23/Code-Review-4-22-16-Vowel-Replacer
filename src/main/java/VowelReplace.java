@@ -16,14 +16,14 @@ public class VowelReplace {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-    get("/reults", (request, response) -> {
-      HashMap model = new HashMap();
+    get("/results", (request, response) -> {
+      Map model = new HashMap();
       String userInput = request.queryParams("userInput");
 
       String changedString = vowelReplacer(userInput);
 
       model.put("output", changedString);
-      model.put("template", "templates/greeting_card.vtl");
+      model.put("template", "templates/results.vtl");
       return new ModelAndView(model, layout);
       }, new VelocityTemplateEngine());
   }
