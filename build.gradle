@@ -3,7 +3,7 @@ apply plugin: 'application'
 
 archivesBaseName = "codeReview42216"
 version = '1.0'
-mainClassName = "VowelReplace"
+mainClassName = "App"
 
 repositories {
   mavenCentral()
