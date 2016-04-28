@@ -38,4 +38,4 @@ Thumbs.db
 # Java #
 ########
 build/
-.gradle
+.gradle/
